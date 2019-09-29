@@ -1,0 +1,17 @@
+<script src="vue.js"></script>
+<div id="div1">
+    <div @click="handleClick">{{msg}}</div>
+</div>
+<script>
+    new Vue({
+        el:"#div1",
+        data:{
+            msg:"hello"
+        },
+        methods:{
+            handleClick:function () {
+                this.msg="world"
+            }
+        }
+    })
+</script>
