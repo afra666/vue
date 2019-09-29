@@ -1,0 +1,15 @@
+<script src="vue.js"></script>
+
+
+
+<div id="div1">{{msg}}</div>
+
+<script>
+    new Vue({
+        el:"#div1",
+        template:'<h1>hello {{msg}}</h1>',
+        data:{
+            msg: "Hello world"
+        }
+    })
+</script>
